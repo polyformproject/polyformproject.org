@@ -8,9 +8,9 @@ The Polyform Project is a group of experienced licensing lawyers and technologis
 
 ## Drafts
 
-You can download our first-draft license language in [Word format here](/polyform-v1.0.0-pre.1.docx), [OpenDocument format here](/polyform-v1.0.0-pre.1.odt), and [PDF here](/polyform-v1.0.0-pre.1.pdf).  You can also read the latest language, and feed back, [on GitHub](https://github.com/polyformproject/polyform-licenses).
+You can download our first-draft license language in [Word format here](/polyform-v1.0.0-pre.1.docx), [OpenDocument format here](/polyform-v1.0.0-pre.1.odt), and [PDF here](/polyform-v1.0.0-pre.1.pdf), or browse and comment [via Google Doc](https://docs.google.com/document/d/1EMbmyG3CNcIL5yJmQOvffo_CZCiwLREZHR3kXvDmPsk/edit?usp=sharing).
 
-We welcome suggestions to improve the language of the license.  Please send any suggestions for drafting improvements to [feedback@polyformproject.org](mailto:feedback@polyformproject.org).
+We welcome suggestions to improve the language of the licenses.  Please send improvements via [Google Doc](https://docs.google.com/document/d/1EMbmyG3CNcIL5yJmQOvffo_CZCiwLREZHR3kXvDmPsk/edit?usp=sharing), to [feedback@polyformproject.org](mailto:feedback@polyformproject.org), or [on GitHub](https://github.com/polyformproject/polyform-licenses).
 
 In the near future, we will follow this release with additional choices, and will incorporate community suggestions.
 
