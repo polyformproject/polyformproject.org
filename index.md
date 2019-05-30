@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ![Polyform](/logo.svg)
 
 The Polyform project is a group of experienced licensing lawyers and technologists who want to help authors of software by providing simple, standardized, and plain language software source code licenses.  Polyform licenses will be freely available for any software developers who want to adopt them.  Polyform licenses are source-available licenses with easy-to-understand limitations.  These licenses will have a menu of choices, like NC (non-commercial), FT (free trial) or SB (small business). 
