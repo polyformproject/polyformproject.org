@@ -4,7 +4,7 @@ layout: default
 
 ![Polyform](/logo.svg)
 
-The Polyform Project is a group of experienced licensing lawyers and technologists developing simple, standardized, plain-language software source code licenses.  Polyform aims to fill the gaps in the menu of standard licenses, like non-commercial, trial, and small-business-only terms.
+The Polyform Project is a group of experienced licensing lawyers and technologists developing simple, standardized, plain-language software source code licenses.  Polyform aims to fill gaps in the menu of standardized software licenses, like non-commercial, trial, and small-business-only terms.
 
 ## Drafts
 
