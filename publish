@@ -3,5 +3,6 @@ cd /var/www/polyformproject.org/
 git fetch origin
 git checkout master
 git reset --hard origin/master
+bundle install --path vendor/bundle
 bundler exec jekyll build
 SESSION
