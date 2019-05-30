@@ -22,18 +22,11 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-body > header,
-body > nav,
-body > main,
-body > footer {
-  margin: 1rem auto;
+body > main {
+  margin: 3rem auto 5rem auto;
   max-width: 30rem;
   padding: 0 1rem;
   text-align: left;
-}
-
-body > header {
-  margin-top: 3rem;
 }
 
 a[href] {

@@ -1,0 +1,7 @@
+title: Polyform Project
+url: https://polyformproject.org
+homepage: https://polyformproject.org
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
