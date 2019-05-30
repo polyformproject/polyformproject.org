@@ -12,7 +12,7 @@ Polyform licenses will be freely available for any software developers who want 
 
 You can download our first draft license language in [Word format here](/polyform-v1.0.0-pre.1.docx), [OpenDocument format here](/polyform-v1.0.0-pre.1.odt), and [PDF here](/polyform-v1.0.0-pre.1.pdf).  You can also read the latest language and feed back [on GitHub](https://github.com/polyformproject/polyform-licenses).
 
-We welcome suggestions to improve the language of the license.  In the near future, we will follow this release with additional choices (such as NX, or non-competing products), and will incorporate community suggestions.
+We welcome suggestions to improve the language of the license.  In the near future, we will follow this release with additional choices, and will incorporate community suggestions.
 
 Please send any suggestions for drafting improvements to [feedback@polyformproject.org](mailto:feedback@polyformproject.org).
 
