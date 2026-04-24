@@ -4,7 +4,9 @@ title: PolyForm Adopters
 
 ## Adopters
 
-<p>Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please contact us.</p>
+Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please <a href="mailto:feedback@polyformproject.org">e-mail feedback@polyformproject.org</a> with the name of your project, a short description, a link to its repository or website, and logo.
+
+---
 
 <img decoding="async" width="150" height="150" src="gaia.png" alt="logo">
 
@@ -53,7 +55,3 @@ The <a href="https://github.com/mun-lang/vscode-extension/blob/master/LICENSE.md
 <a href="https://polygonjs.com/">Polygonjs</a> is node-based WebGL design tool. It helps users create complex WebGL experiences without any coding. Those experiences can be product configurators, data visualizers, virtual galleries, portfolios, interactive artworks, or any sort of great visuals.
 
 Polygonjs is available under <a href="https://github.com/polygonjs/polygonjs/blob/master/LICENSE">Polyform Shield</a>.
-
----
-
-To add your project to this page, <a href="mailto:feedback@polyformproject.org">e-mail feedback@polyformproject.org</a> with the name of your project, a short description, a link to its repository or website, and logo.
