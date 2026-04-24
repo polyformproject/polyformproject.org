@@ -7,7 +7,7 @@ The PolyForm Project is pleased to announce 1.0.0 versions of its first licenses
 
 <a href="/licenses/noncommercial/1.0.0">PolyForm Noncommercial 1.0.0</a> is a general noncommercial license for software.
 
-<a href="/licenses/perimeter/1.0.0">PolyForm Perimeter 1.0.0</a> allows use and distribution, but not in a manner competitive with the software.
+<a href="/licenses/perimeter/1.0.1">PolyForm Perimeter 1.0.0</a> allows use and distribution, but not in a manner competitive with the software.
 
 <a href="/licenses/defensive/1.0.0">PolyForm Defensive 1.0.0</a> allows use and distribution, but not in a manner competitive with the licensor of the software.
 
