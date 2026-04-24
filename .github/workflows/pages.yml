@@ -9,6 +9,7 @@ jobs:
       with:
         node-version: 25
     - run: npm ci
+    - run: sudo apt install -y tidy
     - run: ./build
     - uses: actions/upload-pages-artifact@v3
       with:

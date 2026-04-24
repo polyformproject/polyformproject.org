@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "./build",
+    "postbuild": "find site -iname '*.html' -exec tidy -modify -quiet -indent --indent-spaces 2 --tidy-mark no --wrap 0 --add-meta-charset --gnu-emacs yes --drop-empty-elements no --fix-uri no --force-output yes {} \\;",
     "licenses": "licensee --errors-only"
   }
 }
