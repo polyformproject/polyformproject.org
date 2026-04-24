@@ -17,7 +17,7 @@ PolyForm Project publishes a suite of standardized licenses:
   </tr>
   <tr>
     <td><img src="/shield.png" alt="logo"></td>
-    <td><a href="/licenses/shield/1.0.0/">PolyForm Shield</a> permits uses other than those that compete with the provider of the software.</td>
+    <td><a href="/licenses/shield/1.0.0">PolyForm Shield</a> permits uses other than those that compete with the provider of the software.</td>
   </tr>
   <tr>
     <td><img src="/strict.png" alt="logo"></td>
