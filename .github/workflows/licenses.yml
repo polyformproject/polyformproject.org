@@ -1,3 +1,4 @@
+name: Open Source License Audit
 on: [push]
 jobs:
 

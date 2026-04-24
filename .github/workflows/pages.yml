@@ -1,3 +1,4 @@
+name: GitHub Pages Deployment
 on: [push]
 jobs:
 
