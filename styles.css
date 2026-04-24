@@ -135,3 +135,7 @@ body > nav {
     padding-right: 1rem;
   }
 }
+
+.versions {
+  list-style-type: disc;
+}

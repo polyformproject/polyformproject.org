@@ -4,6 +4,7 @@ import { join, basename, dirname, resolve } from 'node:path'
 
 import escapeHTML from 'escape-html'
 import RSS from 'rss'
+import semver from 'semver'
 import * as commonmark from 'commonmark'
 import grayMatter from 'gray-matter'
 import ejs from 'ejs'
@@ -44,9 +45,12 @@ const slugs = {
   'strict': 'Strict'
 }
 
+const licenseVersions = new Map()
 for (const file of globSync('licenses/**/*.txt')) {
   const version = basename(file, '.txt')
   const slug = basename(dirname(file))
+  if (!licenseVersions.has(slug)) licenseVersions.set(slug, new Set())
+  licenseVersions.get(slug).add(version)
   const plain = readFileSync(file, 'utf8')
   const html = markdown(plain)
   mkdirSync(join('site', 'licenses', slug), { recursive: true })
@@ -62,6 +66,28 @@ for (const file of globSync('licenses/**/*.txt')) {
   symlinkSync(
     resolve(file),
     resolve(join('site', 'licenses', slug, `${version}.txt`))
+  )
+}
+
+for (const [slug, name] of Object.entries(slugs)) {
+  const versions = licenseVersions.get(slug)
+  const title = `PolyForm ${name} Versions`
+  writeFileSync(
+    join('site', 'licenses', slug, 'index.html'),
+    templates.page({
+      title,
+      content: `
+<h2>${title}</h2>
+<ol class=versions>
+${
+  Array.from(versions)
+    .sort(semver.compare)
+    .map(version => `<li><a href=/licenses/${slug}/${version}>${version}</a></li>`)
+    .join('')
+}
+</ol>
+      `.trim()
+    })
   )
 }
 
