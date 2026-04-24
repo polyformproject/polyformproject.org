@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang=en-US>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title><%= name %> <%= version %></title>
+  <link href=/styles.css rel=stylesheet>
+</head>
+<body>
+  <%- include('includes/header') %>
+  <%- include('includes/nav') %>
+  <main>
+    Official Plain Text of <%- name %> <%- version %> <a class=plainTextDownload href="/licenses/<%- slug %>/<%- version %>.txt" download="PolyForm <%- name %> <%- version %>.txt">Download</a></div>
+    <%- html %>
+  </main>
+  <%- include('includes/footer') %>
+</body>
+</html>
