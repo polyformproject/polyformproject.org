@@ -13,9 +13,10 @@ import grayMatter from 'gray-matter'
 import ejs from 'ejs'
 
 // Delete any old build of the site.
-rmSync('site', { recursive: true, force: true })
+const site = 'site'
+rmSync(site, { recursive: true, force: true })
 // Then create a fresh directory.
-mkdirSync('site')
+mkdirSync(site)
 
 const feedPath = 'feed.xml'
 
@@ -31,7 +32,7 @@ for (const file of globSync('pages/**/*.md')) {
   const base = basename(file, '.md')
   const { content, data: frontMatter } = grayMatter(readFileSync(file, 'utf8'))
   const rendered = markdownToHTML(content)
-  writeFileSync(join('site', base + '.html'),
+  writeFileSync(join(site, base + '.html'),
     templates.page(Object.assign({ content: rendered }, frontMatter))
   )
 }
@@ -60,10 +61,10 @@ for (const file of globSync('licenses/**/*.txt')) {
 
   const plain = readFileSync(file, 'utf8')
   const html = markdownToHTML(plain)
-  mkdirSync(join('site', 'licenses', slug), { recursive: true })
+  mkdirSync(join(site, 'licenses', slug), { recursive: true })
   // Write the HTML webpage.
   writeFileSync(
-    join('site', 'licenses', slug, `${version}.html`),
+    join(site, 'licenses', slug, `${version}.html`),
     templates.license(Object.assign({
       name: slugs[slug],
       slug,
@@ -74,7 +75,7 @@ for (const file of globSync('licenses/**/*.txt')) {
   // Symlink the official plain-text rendering.
   symlinkSync(
     resolve(file),
-    resolve(join('site', 'licenses', slug, `${version}.txt`))
+    resolve(join(site, 'licenses', slug, `${version}.txt`))
   )
 }
 
@@ -83,7 +84,7 @@ for (const [slug, name] of Object.entries(slugs)) {
   const versions = licenseVersions.get(slug)
   const title = `PolyForm ${name} Versions`
   writeFileSync(
-    join('site', 'licenses', slug, 'index.html'),
+    join(site, 'licenses', slug, 'index.html'),
     templates.page({
       title,
       content: `
@@ -109,7 +110,7 @@ for (const file of globSync('posts/*.md')) {
   const year = String(frontMatter.date.getFullYear())
   const month = String(frontMatter.date.getMonth() + 1).padStart(2, '0')
   const day = String(frontMatter.date.getDate()).padStart(2, '0')
-  const path = join('site', year, month, day, `${slug}.html`)
+  const path = join(site, year, month, day, `${slug}.html`)
   mkdirSync(dirname(path), { recursive: true })
   const view = Object.assign(frontMatter, {
     link: `/${year}/${month}/${day}/${slug}`,
@@ -124,7 +125,7 @@ for (const file of globSync('posts/*.md')) {
 
 // Write a blog post index page.
 writeFileSync(
-  join('site', 'posts.html'),
+  join(site, 'posts.html'),
   templates.page({
     title: 'Posts',
     content: `
@@ -159,19 +160,19 @@ for (const { title, date, link } of Array.from(posts).sort((a, b) => a.date - b.
   })
 }
 writeFileSync(
-  join('site', feedPath),
+  join(site, feedPath),
   feed.xml()
 )
 
 // Symlink all images.
 for (const file of globSync('images/**/*.png')) {
   const base = basename(file)
-  symlinkSync(resolve(file), resolve(join('site', base)))
+  symlinkSync(resolve(file), resolve(join(site, base)))
 }
 
 // Symlink all stylesheets.
 for (const file of globSync('stylesheets/*.css')) {
-  symlinkSync(resolve(file), resolve(join('site', basename(file))))
+  symlinkSync(resolve(file), resolve(join(site, basename(file))))
 }
 
 // Helper Functions
