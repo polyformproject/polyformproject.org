@@ -34,13 +34,13 @@ Create quizzes, branching scenarios, dialog simulations, and rich multimedia con
 
 [AppsCode ](https://appscode.com/)creates tools to deploy, manage, upgrade Kubernetes on any cloud and automate deployment, scaling, and management of containerized applications, adopted PolyForm <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">NonCommercial</a> and <a href="/licenses/free-trial" data-type="page" data-id="29">Free Trial</a> for various elements of its offering.
 
-<img src="epplus.png" alt="EPPlus Software logo" style="width:246px;height:46px">
+<img src="epplus.png" alt="logo">
 
 [EPPlus Software](https://www.epplussoftware.com/en/Home/LgplToPolyform), an improved version of the world´s most popular spreadsheet library for .NET Framework/Core, adopted version 5 of its library under <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">PolyForm NonCommercial</a>.
 
 [Kanevia](https://bitbucket.org/kaneva2/kanevia/src/master/), an open fork of original Kaneva game engine, was released under <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">PolyForm NonCommercial</a>.
 
-<img class=third src="mu.png">
+<img class=third src="mu.png" alt="logo">
 
 [Micro](https://m3o.org/) uses <a href="/licenses/shield/" data-type="page" data-id="285">PolyForm Shield</a> for its [cloud-native development platform](https://github.com/micro/micro).
 
