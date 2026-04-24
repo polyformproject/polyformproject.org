@@ -2,6 +2,8 @@
 import { rmSync, readFileSync, writeFileSync, symlinkSync, mkdirSync, globSync } from 'node:fs'
 import { join, basename, dirname, resolve } from 'node:path'
 
+import escapeHTML from 'escape-html'
+import RSS from 'rss'
 import * as commonmark from 'commonmark'
 import grayMatter from 'gray-matter'
 import ejs from 'ejs'
@@ -12,6 +14,8 @@ import ejs from 'ejs'
 
 rmSync('site', { recursive: true, force: true })
 mkdirSync('site')
+
+const feedPath = 'feed.xml'
 
 const templates = {}
 for (const file of globSync('templates/*.ejs')) {
@@ -59,6 +63,73 @@ for (const file of globSync('licenses/**/*.txt')) {
     resolve(file),
     resolve(join('site', 'licenses', slug, `${version}.txt`))
   )
+}
+
+const posts = new Set()
+for (const file of globSync('posts/*.md')) {
+  const slug = basename(file, '.md')
+  const { content, data: frontMatter } = grayMatter(readFileSync(file, 'utf8'))
+  const year = String(frontMatter.date.getFullYear())
+  const month = String(frontMatter.date.getMonth() + 1).padStart(2, '0')
+  const day = String(frontMatter.date.getDate()).padStart(2, '0')
+  const path = join('site', year, month, day, `${slug}.html`)
+  mkdirSync(dirname(path), { recursive: true })
+  const view = Object.assign(frontMatter, {
+    link: `/${year}/${month}/${day}/${slug}`,
+    year,
+    month,
+    day,
+    html: markdown(content)
+  })
+  writeFileSync(path, templates.post(view))
+  posts.add(view)
+}
+
+writeFileSync(
+  join('site', 'posts.html'),
+  templates.page({
+    title: 'Posts',
+    content: `
+<h2>Posts</h2>
+<table>
+    ${
+      Array.from(posts)
+        .sort((a, b) => a.date - b.date)
+        .map(({ link, title, date }) => `<tr><td><time datetime="${date}">${displayDate(date)}</time></td><td><a href="${link}">${escapeHTML(title)}</a></td></tr>`)
+        .join('')
+    }
+</table>
+<p>You can subscribe to new posts <a href="${escapeHTML(feedPath)}">via RSS</a>.</p>
+    `
+  })
+)
+
+const feed = new RSS({
+  title: 'PolyForm Project',
+  description: 'simple, standard, plain-language software licenses',
+  site_url: 'https://polyformproject.org',
+  feed_url: 'https://polyformproject.org/feed',
+  image_url: 'https://polyformproject.org/p-on-white.png',
+  language: 'en'
+})
+for (const { title, date, link } of Array.from(posts).sort((a, b) => a.date - b.date)) {
+  feed.item({
+    title,
+    date,
+    url: `https://polyformproject.org${link}`
+  })
+}
+writeFileSync(
+  join('site', feedPath),
+  feed.xml()
+)
+
+function displayDate (date) {
+  return date.toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
 }
 
 for (const file of globSync('images/**/*.png')) {

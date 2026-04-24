@@ -3,14 +3,19 @@
 <head>
   <meta charset=UTF-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <% if (locals.title) { %><title><%= title %></title><% } else { %><title>PolyForm Project</title><% } %>
+  <title><%= title %></title>
   <link href=/styles.css rel=stylesheet>
   <%- include('includes/rss') %>
 </head>
 <body>
   <%- include('includes/header') %>
   <%- include('includes/nav') %>
-  <main><%- content %></main>
+  <main>
+    <h2><%= title %></h2>
+    <time datetime="<%= date.toISOString() %>"><%= date.toLocaleString(
+      'en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></time>
+    <%- html %>
+  </main>
   <%- include('includes/footer') %>
 </body>
 </html>
