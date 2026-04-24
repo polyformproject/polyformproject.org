@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang=en-US>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <% if (locals.title) { %><title><%= title %></title><% } else { %><title>PolyForm Project</title><% } %>
+  <link href=/styles.css rel=stylesheet>
+</head>
+<body>
+  <%- include('includes/header') %>
+  <%- include('includes/nav') %>
+  <main><%- content %></main>
+  <%- include('includes/footer') %>
+</body>
+</html>

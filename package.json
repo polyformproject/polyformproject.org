@@ -1,0 +1,9 @@
+{
+  "name": "polyformproject.org",
+  "private": true,
+  "devDependencies": {
+    "commonmark": "^0.31.2",
+    "ejs": "^5.0.2",
+    "gray-matter": "^4.0.3"
+  }
+}

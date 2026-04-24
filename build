@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+import { rmSync, readFileSync, writeFileSync, symlinkSync, mkdirSync, globSync } from 'node:fs'
+import { join, basename, resolve } from 'node:path'
+
+import * as commonmark from 'commonmark'
+import grayMatter from 'gray-matter'
+import ejs from 'ejs'
+
+rmSync('site', { recursive: true, force: true })
+mkdirSync('site')
+
+const templates = {}
+for (const file of globSync('templates/*.ejs')) {
+  const base = basename(file, '.ejs')
+  templates[base] = ejs.compile(readFileSync(file, 'utf8'), { filename: file })
+}
+
+for (const file of globSync('pages/**/*.md')) {
+  const base = basename(file, '.md')
+  const { content, data: frontMatter } = grayMatter(readFileSync(file, 'utf8'))
+  const rendered = markdown(content)
+  writeFileSync(join('site', base + '.html'),
+    templates.page(Object.assign({ content: rendered }, frontMatter))
+  )
+}
+
+for (const file of globSync('images/**/*.png')) {
+  const base = basename(file)
+  symlinkSync(`./${file}`, `./${join('site', base)}`)
+}
+
+symlinkSync('./styles.css', './site/styles.css')
+
+function markdown (source) {
+  const reader = new commonmark.Parser()
+  const writer = new commonmark.HtmlRenderer({ safe: false })
+  return writer.render(reader.parse(source))
+}
