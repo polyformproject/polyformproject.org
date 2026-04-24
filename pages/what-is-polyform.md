@@ -20,15 +20,15 @@ Until now, there has been no standardization of this kind of source code license
 
 ## What are the benefits of the PolyForm licenses?
 
-- ** Professional drafting**. The licenses were drafted by experienced software licensing lawyers, with input from technologists and entrepreneurs. The drafting team has over 100 years of combined experience.
+- **Professional drafting**. The licenses were drafted by experienced software licensing lawyers, with input from technologists and entrepreneurs. The drafting team has over 100 years of combined experience.
 
-- ** Plain Language**. The licenses are written in a plain language style, to promote understanding and brevity.
+- **Plain Language**. The licenses are written in a plain language style, to promote understanding and brevity.
 
-- ** Standardization and Modularity**. Like the “Creative Commons” licenses for non-software materials, PolyForm licenses offers a menu of several useful license limitations that can be adopted and expressed easily.
+- **Standardization and Modularity**. Like the “Creative Commons” licenses for non-software materials, PolyForm licenses offers a menu of several useful license limitations that can be adopted and expressed easily.
 
-- ** Easy access for licensees**. Those who accept the license limitations can easily adopt software, without any need to sign agreements or review unique licenses.
+- **Easy access for licensees**. Those who accept the license limitations can easily adopt software, without any need to sign agreements or review unique licenses.
 
-- ** Easy adoption by licensors**. Developers who write software can easily adopt PolyForm licenses without engaging expensive and specialized legal help.
+- **Easy adoption by licensors**. Developers who write software can easily adopt PolyForm licenses without engaging expensive and specialized legal help.
 
 ## PolyForm is not…
 
@@ -42,7 +42,7 @@ Until now, there has been no standardization of this kind of source code license
 
 - Developers who want to make their software freely available for research or non-profit purposes.
 
-- <a href="https://polyformproject.org/why-adopt-polyform/">More detail</a>.
+- <a href="/why-adopt-polyform">More detail</a>.
 
 ## But what is a Polyform?
 

@@ -6,6 +6,10 @@ import * as commonmark from 'commonmark'
 import grayMatter from 'gray-matter'
 import ejs from 'ejs'
 
+// TODO: Implement posts.
+// TODO: Implement license pages.
+// TODO: Implement plain-text license downloads.
+
 rmSync('site', { recursive: true, force: true })
 mkdirSync('site')
 
