@@ -170,8 +170,8 @@ for (const file of globSync('images/**/*.png')) {
 }
 
 // Symlink all stylesheets.
-for (const file of globSync('*.css')) {
-  symlinkSync(resolve(file), resolve(join('site', file)))
+for (const file of globSync('stylesheets/*.css')) {
+  symlinkSync(resolve(file), resolve(join('site', basename(file))))
 }
 
 // Helper Functions
