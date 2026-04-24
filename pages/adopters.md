@@ -8,6 +8,12 @@ Congratulations to our adopters listed below.  If you have adopted a PolyForm li
 
 ---
 
+<img class=third src=knowledge-quest-studio.png alt=logo>
+
+[Knowledge Quest Studio](https://knowledge-quest-studio.vercel.app/) is a free, browser‑based tool for building interactive online lessons that actually engage students.
+
+Create quizzes, branching scenarios, dialog simulations, and rich multimedia content in minutes. Then export directly to your LMS as SCORM. No installs. No accounts. No subscriptions. Just powerful instructional design tools, available to every educator, forever. Knowledge Quest uses [PolyForm Noncommercial License 1.0.0](/licenses/noncommercial/1.0.0).
+
 <img class=third src="gaia.png" alt="logo">
 
 [GAIA](https://github.com/theexperiencecompany/gaia), a proactive, personal AI assistant designed to significantly improve productivity, is licensed under PolyForm Strict.
