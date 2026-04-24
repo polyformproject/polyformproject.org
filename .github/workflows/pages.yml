@@ -10,7 +10,7 @@ jobs:
       with:
         node-version: 25
     - run: npm ci
-    - run: sudo apt install -y tidy
+    - run: sudo apt-get -y install tidy
     - run: ./build
     - uses: actions/upload-pages-artifact@v5
       with:
