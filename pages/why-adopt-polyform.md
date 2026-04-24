@@ -6,7 +6,7 @@ title: Why Adopt PolyForm?
 
 
 
-<p>More on how PolyForm <a href="https://polyformproject.org/polyform-and-open-core/" target="_blank" rel="noreferrer noopener" aria-label="fits with open core licensing models (opens in a new tab)">fits with open core licensing models</a>.</p>
+More on how PolyForm [fits with open core licensing models](/polyform-and-open-core).
 
 
 
