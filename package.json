@@ -2,6 +2,9 @@
   "name": "polyformproject.org",
   "private": true,
   "packageManager": "npm",
+  "engines": {
+    "node": "^25.9.0"
+  },
   "devDependencies": {
     "commonmark": "^0.31.2",
     "ejs": "^5.0.2",
