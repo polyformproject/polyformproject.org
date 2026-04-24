@@ -1,4 +1,4 @@
-/*! PolyForm Styles */
+@include('normalize.css')
 
 html { font-size: 2.0vw; }
 
