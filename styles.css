@@ -129,3 +129,8 @@ body > nav {
   justify-content: flex-start;
 }
 
+.licenses {
+  tr td:first-child {
+    padding-right: 0.5rem;
+  }
+}
