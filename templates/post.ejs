@@ -12,7 +12,7 @@
   <%- include('includes/nav') %>
   <main>
     <h2><%= title %></h2>
-    <time datetime="<%= date.toISOString() %>"><%= date.toLocaleString(
+    <time class=dateline datetime="<%= date.toISOString() %>"><%= date.toLocaleString(
       'en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></time>
     <%- html %>
   </main>
