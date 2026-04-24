@@ -7,10 +7,12 @@
     "ejs": "^5.0.2",
     "escape-html": "^1.0.3",
     "gray-matter": "^4.0.3",
+    "licensee": "^12.0.1",
     "rss": "^1.2.2",
     "semver": "^7.7.4"
   },
   "scripts": {
-    "build": "./build"
+    "build": "./build",
+    "licenses": "licensee --errors-only"
   }
 }
