@@ -2,7 +2,7 @@
 title: PolyForm Licenses
 ---
 
-## Licenses
+# Licenses
 
 PolyForm Project publishes a suite of standardized licenses:
 

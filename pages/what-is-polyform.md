@@ -2,7 +2,7 @@
 title: What is PolyForm?
 ---
 
-## What is PolyForm?
+# What is PolyForm?
 
 PolyForm is a project to draft and make freely available plain-language source code licenses with limited rights.
 

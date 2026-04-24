@@ -2,7 +2,7 @@
 title: PolyForm Adopters
 ---
 
-## Adopters
+# Adopters
 
 Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please [e-mail feedback@polyformproject.org](mailto:feedback@polyformproject.org) with the name of your project, a short description, a link to its repository or website, and logo.
 
