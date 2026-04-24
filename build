@@ -163,7 +163,9 @@ for (const file of globSync('images/**/*.png')) {
   symlinkSync(resolve(file), resolve(join('site', base)))
 }
 
-symlinkSync(resolve('./styles.css'), resolve('./site/styles.css'))
+for (const file of globSync('*.css')) {
+  symlinkSync(resolve(file), resolve(join('site', file)))
+}
 
 function markdown (source) {
   const reader = new commonmark.Parser()
