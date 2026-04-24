@@ -2,6 +2,8 @@
 title: PolyForm and Open Core
 ---
 
+# PolyForm and Open Core
+
 Although PolyForm licenses [have many uses](https://web.archive.org/web/20250422030845/https://polyformproject.org/why-adopt-polyform/), one important driver of the value for PolyForm licenses is the Open Core licensing model.
 
 “Open Core” is actually both licensing and business strategy that enables open source software developers and COSS (commercial open source software) companies to reserve certain (proprietary) software code assets for monetization, while making central assets of a project — the Open Core itself — available freely under industry standard open source software licenses like [Apache 2.0, MIT, and more](https://web.archive.org/web/20250422030845/http://www.opensource.org/licenses).
