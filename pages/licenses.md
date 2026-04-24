@@ -13,7 +13,7 @@ PolyForm Project publishes a suite of standardized licenses:
   </tr>
   <tr>
     <td><img src="/perimeter.png" alt="logo"></td>
-    <td><a href="/licenses/perimeter/1.0.0">PolyForm Perimeter</a> permits uses other than those that compete with the software.</td>
+    <td><a href="/licenses/perimeter/1.0.1">PolyForm Perimeter</a> permits uses other than those that compete with the software.</td>
   </tr>
   <tr>
     <td><img src="/shield.png" alt="logo"></td>
