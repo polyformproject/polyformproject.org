@@ -43,67 +43,65 @@ PolyForm Project publishes a suite of standardized licenses:
 
 ## Quick Reference
 
-<figure>
-  <table>
-    <thead>
-      <tr>
-        <th>License</th>
-        <th>Use</th>
-        <th>Change</th>
-        <th>Distribute</th>
-        <th>Limitation</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="/licenses/strict/">PolyForm-Strict</a></td>
-        <td>Yes</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>Non-Commercial</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/noncommercial/">PolyForm-Noncommercial</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>Non-Commercial</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/free-trial/">PolyForm-Free-Trial</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>&nbsp;</td>
-        <td>Trial</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/internal-use/">PolyForm-Internal-Use</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>&nbsp;</td>
-        <td>Internal</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/small-business/">PolyForm-Small-Business</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>SMB</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/perimeter/">PolyForm-Perimeter</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>No Competition with Software</td>
-      </tr>
-      <tr>
-        <td><a href="/licenses/shield/">PolyForm-Shield</a></td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>Yes</td>
-        <td>No Competition with Provider</td>
-      </tr>
-    </tbody>
-  </table>
-</figure>
+<table>
+  <thead>
+    <tr>
+      <th>License</th>
+      <th>Use</th>
+      <th>Change</th>
+      <th>Distribute</th>
+      <th>Limitation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/licenses/strict">Strict</a></td>
+      <td>Yes</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>Non-Commercial</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/noncommercial">Noncommercial</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Non-Commercial</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/free-trial">Free Trial</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>&nbsp;</td>
+      <td>Trial</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/internal-use">Internal Use</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>&nbsp;</td>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/small-business">Small Business</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>SMB</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/perimeter">Perimeter</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No Competition with Software</td>
+    </tr>
+    <tr>
+      <td><a href="/licenses/shield">Shield</a></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No Competition with Provider</td>
+    </tr>
+  </tbody>
+</table>
