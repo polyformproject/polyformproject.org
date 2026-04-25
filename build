@@ -51,18 +51,18 @@ const slugs = {
   strict: 'Strict'
 }
 
-const licenseVersions = new Map()
+const licenseVersions = new Map() // slug => Set of version numbers
 for (const file of globSync('licenses/**/*.txt')) {
   const version = basename(file, '.txt')
   const slug = basename(dirname(file))
 
-  if (!licenseVersions.has(slug)) licenseVersions.set(slug, new Set())
-  licenseVersions.get(slug).add(version)
+  if (licenseVersions.has(slug)) licenseVersions.get(slug).add(version)
+  else licenseVersions.set(slug, new Set([version]))
 
   const plain = readFileSync(file, 'utf8')
   const html = markdownToHTML(plain)
-  mkdirSync(join(site, 'licenses', slug), { recursive: true })
   // Write the HTML webpage.
+  mkdirSync(join(site, 'licenses', slug), { recursive: true })
   writeFileSync(
     join(site, 'licenses', slug, `${version}.html`),
     templates.license(Object.assign({
@@ -164,7 +164,8 @@ writeFileSync(
   feed.xml()
 )
 
-// Symlink all images.
+// Symlink images.
+
 for (const file of globSync('images/**/*.png')) {
   const base = basename(file)
   symlinkSync(resolve(file), resolve(join(site, base)))
@@ -177,7 +178,7 @@ for (const file of globSync('adopters/*.png')) {
   symlinkSync(resolve(file), resolve(join(site, `${base}.png`)))
 }
 
-// Symlink all stylesheets.
+// Symlink stylesheets.
 for (const file of globSync('stylesheets/*.css')) {
   symlinkSync(resolve(file), resolve(join(site, basename(file))))
 }
