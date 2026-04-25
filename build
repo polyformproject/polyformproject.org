@@ -125,11 +125,11 @@ for (const file of globSync('posts/*.md')) {
 
 // Write a blog post index page.
 writeFileSync(
-  join(site, 'blog.html'),
+  join(site, 'announcements.html'),
   templates.page({
-    title: 'Blog Posts',
+    title: 'Announcements',
     content: `
-<h2>Blog Posts</h2>
+<h2>Announcements</h2>
 <table>
     ${
       Array.from(posts)
@@ -221,7 +221,8 @@ ${
 // Write redirects
 for (const [from, to] of [
   ['what-is-polyform', 'about'],
-  ['posts', 'blog']
+  ['posts', 'blog'],
+  ['blog', 'announcements']
 ]) {
   writeFileSync(
     join(site, `${from}.html`),
