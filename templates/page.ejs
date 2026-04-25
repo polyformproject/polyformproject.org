@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang=en-US>
 <head>
-  <meta charset=UTF-8>
-  <meta name=viewport content="width=device-width, initial-scale=1">
+  <%- include('meta') %>
   <% if (locals.title) { %><title><%= title %></title><% } else { %><title>PolyForm Project</title><% } %>
   <% if (locals.description) { %><meta name="description" content="<%= description %>"><% } %>
   <%- include('styles') %>
