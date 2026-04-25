@@ -218,6 +218,16 @@ ${
   })
 )
 
+// Write redirects
+for (const [from, to] of [
+  ['what-is-polyform', 'about']
+]) {
+  writeFileSync(
+    join(site, `${from}.html`),
+    templates.redirect({ to })
+  )
+}
+
 // Helper Functions
 
 function markdownToHTML (source) {
