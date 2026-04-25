@@ -4,15 +4,15 @@
   <meta charset=UTF-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title><%= name %> <%= version %></title>
-  <%- include('includes/styles') %>
+  <%- include('styles') %>
 </head>
 <body>
-  <%- include('includes/header') %>
-  <%- include('includes/nav') %>
+  <%- include('header') %>
+  <%- include('nav') %>
   <main>
     <aside>Official Plain Text of <%- name %> <%- version %> <a class=plainTextDownload href="/licenses/<%- slug %>/<%- version %>.txt" download="PolyForm <%- name %> <%- version %>.txt">Download</a></aside>
     <%- html %>
   </main>
-  <%- include('includes/footer') %>
+  <%- include('footer') %>
 </body>
 </html>

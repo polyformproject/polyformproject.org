@@ -5,13 +5,13 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <% if (locals.title) { %><title><%= title %></title><% } else { %><title>PolyForm Project</title><% } %>
   <% if (locals.description) { %><meta name="description" content="<%= description %>"><% } %>
-  <%- include('includes/styles') %>
-  <%- include('includes/rss') %>
+  <%- include('styles') %>
+  <%- include('rss') %>
 </head>
 <body>
-  <%- include('includes/header') %>
-  <%- include('includes/nav') %>
+  <%- include('header') %>
+  <%- include('nav') %>
   <main><%- content %></main>
-  <%- include('includes/footer') %>
+  <%- include('footer') %>
 </body>
 </html>

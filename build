@@ -24,7 +24,7 @@ const feedPath = 'feed.xml'
 const templates = {}
 for (const file of globSync('templates/*.ejs')) {
   const base = basename(file, '.ejs')
-  templates[base] = ejs.compile(readFileSync(file, 'utf8'), { filename: file })
+  templates[base] = ejs.compile(readFileSync(file, 'utf8'), { views: [resolve('templates/includes')] })
 }
 
 // Render static pages based on Markdown files.

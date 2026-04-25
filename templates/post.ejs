@@ -4,18 +4,18 @@
   <meta charset=UTF-8>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title><%= title %></title>
-  <%- include('includes/styles') %>
-  <%- include('includes/rss') %>
+  <%- include('styles') %>
+  <%- include('rss') %>
 </head>
 <body>
-  <%- include('includes/header') %>
-  <%- include('includes/nav') %>
+  <%- include('header') %>
+  <%- include('nav') %>
   <main>
     <h2><%= title %></h2>
     <time class=dateline datetime="<%= date.toISOString() %>"><%= date.toLocaleString(
       'en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></time>
     <%- html %>
   </main>
-  <%- include('includes/footer') %>
+  <%- include('footer') %>
 </body>
 </html>
