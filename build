@@ -199,7 +199,7 @@ writeFileSync(
     content: `
 <h1>Adopters</h1>
 
-<p>Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please e-mail <a href="mailto:feedback@polyformproject.org">feedback@polyformproject.org</a> with the name of your project, a short description, a link to its repository or website, and logo.</p>
+<p>Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please e-mail <a href="mailto:feedback@polyformproject.org">feedback@polyformproject.org</a> with the name of your project, a short description, a link to its repository or website, and logo. You can also send a pull request to <a href="https://github.com/polyformproject/polyformproject.org">the GitHub repository</a> directly.</p>
 
 <ul class=adopters>
 ${
