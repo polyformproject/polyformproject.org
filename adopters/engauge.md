@@ -1,0 +1,1 @@
+[Engauge](https://github.com/EngaugeAI/engauge), a self-contained and privacy-preserving binary for web and mobile application analytics, releases under <a href="/licenses/perimeter" data-type="page" data-id="232">PolyForm Perimeter</a>.

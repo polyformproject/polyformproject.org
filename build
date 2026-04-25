@@ -27,7 +27,7 @@ for (const file of globSync('templates/*.ejs')) {
   templates[base] = ejs.compile(readFileSync(file, 'utf8'), { filename: file })
 }
 
-// Render static pages based.
+// Render static pages based on Markdown files.
 for (const file of globSync('pages/**/*.md')) {
   const base = basename(file, '.md')
   const { content, data: frontMatter } = grayMatter(readFileSync(file, 'utf8'))
@@ -170,10 +170,53 @@ for (const file of globSync('images/**/*.png')) {
   symlinkSync(resolve(file), resolve(join(site, base)))
 }
 
+const adopterImages = new Set()
+for (const file of globSync('adopters/*.png')) {
+  const base = basename(file, '.png')
+  adopterImages.add(base)
+  symlinkSync(resolve(file), resolve(join(site, `${base}.png`)))
+}
+
 // Symlink all stylesheets.
 for (const file of globSync('stylesheets/*.css')) {
   symlinkSync(resolve(file), resolve(join(site, basename(file))))
 }
+
+// Render adopters page.
+const adopters = new Set()
+for (const file of globSync('adopters/*.md')) {
+  const base = basename(file, '.md')
+  const { content, data: frontMatter } = grayMatter(readFileSync(file, 'utf8'))
+  adopters.add(Object.assign(frontMatter, {
+    basename: base,
+    html: markdownToHTML(content)
+  }))
+}
+writeFileSync(
+  join(site, 'adopters.html'),
+  templates.page({
+    content: `
+<h1>Adopters</h1>
+
+<p>Congratulations to our adopters listed below.  If you have adopted a PolyForm license for your software, and want to appear here, please e-mail <a href="mailto:feedback@polyformproject.org">feedback@polyformproject.org</a> with the name of your project, a short description, a link to its repository or website, and logo.</p>
+
+<ul class=adopters>
+${
+  Array.from(adopters)
+    .sort((a, b) => a.basename.localeCompare(b.basename))
+    .map(({ html, basename }) => {
+      const id = stringToID(basename)
+      if (adopterImages.has(basename)) {
+        return `<li id="${id}"><img src="/${basename}.png" alt=logo>${html}</li>`
+      }
+      return `<li id="${id}">${html}</li>`
+    })
+    .join('')
+}
+</ul>
+    `
+  })
+)
 
 // Helper Functions
 
@@ -189,4 +232,11 @@ function displayDate (date) {
     month: 'long',
     day: 'numeric'
   })
+}
+
+function stringToID (string) {
+  return string
+    .toLowerCase()
+    .replace(/[^a-z0-9]- ]/g, '')
+    .replace(/ /g, '-')
 }

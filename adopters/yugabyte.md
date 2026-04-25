@@ -1,0 +1,1 @@
+[Yugabyte](https://www.yugabyte.com/), a high-performance distributed SQL database, adopted <a href="/licenses/free-trial" data-type="page" data-id="29">PolyForm Free Trial</a> for its managed service elements.

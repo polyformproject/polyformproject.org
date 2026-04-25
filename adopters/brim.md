@@ -1,0 +1,1 @@
+[Brim](https://github.com/brimsec/zq/blob/master/LICENSE.txt), a desktop and server application to search packet captures and security logs, released elements of its software under the <a href="/licenses/perimeter" data-type="page" data-id="232">PolyForm Perimeter</a> license.

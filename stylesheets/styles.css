@@ -136,3 +136,13 @@ body > nav {
 .third {
   max-width: 33.3%;
 }
+
+.adopters {
+  list-style-type: none;
+  padding: 0;
+  li {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}

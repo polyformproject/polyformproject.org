@@ -1,0 +1,1 @@
+[Kanevia](https://bitbucket.org/kaneva2/kanevia/src/master/), an open fork of original Kaneva game engine, was released under <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">PolyForm NonCommercial</a>.

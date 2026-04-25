@@ -1,0 +1,1 @@
+The [Mun programming language](https://github.com/mun-lang/vscode-extension/blob/master/LICENSE.md) uses <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">PolyForm Noncommercial</a> for its vscode-extension library.

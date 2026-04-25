@@ -1,0 +1,1 @@
+[EPPlus Software](https://www.epplussoftware.com/en/Home/LgplToPolyform), an improved version of the world´s most popular spreadsheet library for .NET Framework/Core, adopted version 5 of its library under <a href="/licenses/noncommercial/1.0.0" data-type="page" data-id="58">PolyForm NonCommercial</a>.
