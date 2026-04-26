@@ -27,6 +27,7 @@ body > footer {
 }
 
 body > header {
+  padding-top: 1rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
