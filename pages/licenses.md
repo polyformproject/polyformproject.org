@@ -43,7 +43,7 @@ PolyForm Project publishes a suite of standardized licenses:
 
 ## Quick Reference
 
-<table>
+<table class=licenses-comparison>
   <thead>
     <tr>
       <th>License</th>
