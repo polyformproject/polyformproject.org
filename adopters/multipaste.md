@@ -1,0 +1,1 @@
+[Multipaste](https://github.com/NewdlDewdl/multipaste), a native macOS clipboard history and snippet expansion tool with a global hotkey, keyboard-only picker window, pinning, fuzzy search, and trigger-based text expansion in a single ~440 KB DMG, is licensed under [PolyForm Strict 1.0.0](/licenses/strict/1.0.0).
