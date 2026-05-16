@@ -57,8 +57,8 @@ PolyForm Project publishes a suite of standardized licenses:
     <tr>
       <td><a href="/licenses/strict">Strict</a></td>
       <td>Yes</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td></td>
+      <td></td>
       <td>Non-Commercial</td>
     </tr>
     <tr>
@@ -72,14 +72,14 @@ PolyForm Project publishes a suite of standardized licenses:
       <td><a href="/licenses/free-trial">Free Trial</a></td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>&nbsp;</td>
+      <td></td>
       <td>Trial</td>
     </tr>
     <tr>
       <td><a href="/licenses/internal-use">Internal Use</a></td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>&nbsp;</td>
+      <td></td>
       <td>Internal</td>
     </tr>
     <tr>
