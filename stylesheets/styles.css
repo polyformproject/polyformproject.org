@@ -124,6 +124,12 @@ body > nav {
   }
 }
 
+.licenses {
+  td, th {
+    vertical-align: top;
+  }
+}
+
 .licenses-comparison {
   border-collapse: collapse;
   td, th {
