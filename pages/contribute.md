@@ -9,3 +9,5 @@ Everyone is welcome to send comments and suggestions to improve PolyForm Project
 Ongoing development of PolyForm licenses takes place in a GitHub repository: <https://github.com/polyformproject/polyform-licenses>
 
 You can also send comments and suggestions to [feedback@polyformproject.org](mailto:feedback@polyformproject.org).
+
+The source files for polyformproject.org are also [on GitHub](https://github.com/polyformproject/polyformproject.org).
