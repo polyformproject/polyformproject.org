@@ -8,6 +8,10 @@ Congratulations to our adopters listed below.
 
 ---
 
+<img class=third src=echovalidum.png alt=logo>
+
+[Echovalidum](https://echovalidum.com/)  is a Python library for lattice-based memory with kernel-checked attestations for the Sabelfeld–Sands four-channel iteration-count non-interference model. Every value is a Cell(value, trust, phase) on a bounded trust-coherence lattice; loops carry declared termination bounds; and non-interference judgments are discharged as Z3/QF_BV obligations and signed through a post-quantum attestation pipeline. Source-available under PolyForm Noncommercial 1.0.0; commercial license available.
+
 <img class=third src=knowledge-quest-studio.png alt=logo>
 
 [Knowledge Quest Studio](https://knowledge-quest-studio.vercel.app/) is a free, browser‑based tool for building interactive online lessons that actually engage students.
